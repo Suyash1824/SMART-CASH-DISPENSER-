@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moneta Spatial | Pro Algorithmic Distribution</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-layer layer-1" id="l1"></div>
+    <div class="bg-layer layer-2" id="l2"></div>
+    <div class="bg-layer layer-3" id="l3"></div>
+
+    <div class="app-container" id="app-body">
+        <header>
+            <div class="brand">
+                <h1>Moneta.</h1>
+            </div>
+
+            <div class="theme-switch" id="theme-toggle">
+                <div class="switch-btn" data-mode="light">Light</div>
+                <div class="switch-btn active" data-mode="dark">Dark</div>
+            </div>
+        </header>
+
+        <main class="spatial-grid">
+            <!-- Hero Selection -->
+            <section class="spatial-card hero-section" id="c1">
+                <p style="font-size: 13px; font-weight: 700; color: var(--accent); letter-spacing: 1px;">OPTIMIZE
+                    DISPENSE</p>
+                <input type="number" id="amount" class="amount-input" value="128">
+                <button class="btn-action" id="calculate-btn">EXECUTE</button>
+            </section>
+
+            <!-- Intelligence Terminal -->
+            <section class="spatial-card" id="c2" style="grid-column: 3; grid-row: 1 / 3;">
+                <h3>Decision Intelligence</h3>
+                <div class="terminal" id="trace-terminal">
+                    Awaiting activation...
+                </div>
+
+                <div style="margin-top: 24px;">
+                    <h4
+                        style="font-size: 11px; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px;">
+                        Currency Configuration</h4>
+                    <input type="text" id="denominations" class="inline-input"
+                        value="1, 2, 5, 10, 20, 50, 100, 200, 500">
+
+                    <h4
+                        style="font-size: 11px; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px; margin-top: 16px;">
+                        AI Analysis</h4>
+                    <p id="ai-reasoning"
+                        style="font-size: 13px; margin-top: 8px; line-height: 1.6; color: var(--text-secondary);">
+                        System idle.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Distribution Results -->
+            <section class="spatial-card" id="c3" style="grid-column: 1 / 3;">
+                <h3 style="font-size: 16px;">Optimal Allocation</h3>
+                <div id="dp-results" class="note-container">
+                    <!-- Simplified Result Pills -->
+                </div>
+            </section>
+
+            <!-- Analytics Widget -->
+            <section class="spatial-card" id="c4" style="grid-column: 1 / 2;">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 12px;">
+                    <h3 style="font-size: 14px;">Benchmarks</h3>
+                    <span id="method-tag" style="font-size: 10px; font-weight: 800; color: var(--accent);">—</span>
+                </div>
+                <div style="display:flex; align-items: baseline; gap: 8px;">
+                    <span id="opt-count" style="font-size: 32px; font-weight: 800; color: var(--success);">0</span>
+                    <span style="font-size: 12px; color: var(--text-secondary);">Units Total</span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
